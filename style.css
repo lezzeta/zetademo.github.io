@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+/* -----------
+NAVBAR
+----------- */
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+    height: 3.2rem;
+}
+nav {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;   
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: rgb(245, 245, 220);
+}
+
+/* .nav-button {
+    padding: 3px 5px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e622b5;
+} */
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 270px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button {
+    display: none;
+}
+
+/* ----------
+Gioi thieu
+---------- */
+#hero {
+    height: 300;
+    width: 80%;
+    background-color: rgb(248, 172, 85);
+    border-radius: 30px;
+    margin: 30px auto;
+    padding: 18px 30px 0px 30px;
+    color: var(--black);
+
+}
+.sec1 {
+    background-image: url(https://media.discordapp.net/attachments/1289965241366609943/1290210310539448381/Thiet_ke_chua_co_ten_2.png?ex=66fba17c&is=66fa4ffc&hm=4ac395c0030a0369c57eec3300c002a75cc00ba5813eed7b17d607c24f1a5f92&=&format=webp&quality=lossless&width=550&height=413);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300hv;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    
+}   
+#hero h2{
+    font-weight: 500;
+    color: rgb(85, 84, 84);
+}
+#hero h1 {
+    font-size: 80px;
+    line-height: 85px;
+}
+#hero .dang-ky-content .dk {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    /* margin: 0 20px; */
+    font-weight: 500;
+    /* border-bottom: 1px solid rgb(85, 84, 84); */
+    padding: 0.4rem 1.3rem;
+    border-radius: 9px;
+    background-color: rgb(85, 84, 84);
+    transition: all 0.3s;
+
+}
+
+#hero .dang-ky-content .dk:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+#hero .dang-ky-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ladi-transtion {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.6;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+/* ABOUT */
+
+/* section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+} */
+#about {
+    padding: 3% 12% 0% 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 220);
+}
+.about {
+    gap: 50px;
+}
+.about-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.about-image {
+    width: 50%;
+}
+.about .about-content h2 {
+    font-size: 50px;
+}
+.about .about-content p {
+    font-size: 1.1rem;
+    color: var(--pere-color);
+    font-weight: 300;
+}
+.about .about-content h3 {
+    color: #cf711f;;
+}
+.about-content .bot {
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+/* HUONG DAN */
+.section-huong-dan {
+    padding: 5.6rem 0;
+}
+.container {
+    max-width: 123rem;
+    padding: 0 6rem;
+    margin: 0 auto;
+}
+.container h1 {
+    margin-bottom: 30px;
+}
+.dacam {
+    color: #cf711f;;
+}
+.font-size-50px {
+    font-size: 50px;
+}
+.grid {
+    display: grid;
+    column-gap: 7.4rem;
+    row-gap: 4.6rem;
+}
+.grid-center-v {
+    align-items: center;
+}
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* STEP-CONTENT */
+.step-img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+.step-img {
+    width: 35%;
+}
+.step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+.step-img-box::before, .step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.step-number {
+    font-size: 5.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+.heading {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+.mo-ta {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+
+
